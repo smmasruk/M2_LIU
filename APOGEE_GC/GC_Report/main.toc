@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Cluster Data}{2}{}%
+\contentsline {section}{\numberline {2}Individual Cluster and analysis}{5}{}%
+\contentsline {subsection}{\numberline {2.1}NGC0104}{5}{}%
+\contentsline {subsection}{\numberline {2.2}NGC0288}{6}{}%
+\contentsline {subsection}{\numberline {2.3}NGC0362}{7}{}%
+\contentsline {subsection}{\numberline {2.4}NGC1851}{8}{}%
+\contentsline {subsection}{\numberline {2.5}NGC2298}{9}{}%
+\contentsline {subsection}{\numberline {2.6}NGC2808}{10}{}%
+\contentsline {subsection}{\numberline {2.7}NGC3201}{11}{}%
+\contentsline {subsection}{\numberline {2.8}NGC4590}{12}{}%
+\contentsline {subsection}{\numberline {2.9}NGC5024}{13}{}%
+\contentsline {subsection}{\numberline {2.10}NGC5053}{14}{}%
+\contentsline {subsection}{\numberline {2.11}NGC5272}{15}{}%
+\contentsline {subsection}{\numberline {2.12}NGC5466}{16}{}%
+\contentsline {subsection}{\numberline {2.13}NGC5904}{17}{}%
+\contentsline {subsection}{\numberline {2.14}NGC6093}{18}{}%
+\contentsline {subsection}{\numberline {2.15}NGC6121}{19}{}%
+\contentsline {subsection}{\numberline {2.16}NGC6144}{20}{}%
+\contentsline {subsection}{\numberline {2.17}NGC6171}{21}{}%
+\contentsline {subsection}{\numberline {2.18}NGC6205}{22}{}%
+\contentsline {subsection}{\numberline {2.19}NGC6218}{23}{}%
+\contentsline {subsection}{\numberline {2.20}NGC6254}{24}{}%
+\contentsline {subsection}{\numberline {2.21}NGC6304}{25}{}%
+\contentsline {subsection}{\numberline {2.22}NGC6341}{26}{}%
+\contentsline {subsection}{\numberline {2.23}NGC6388}{27}{}%
+\contentsline {subsection}{\numberline {2.24}NGC6715}{28}{}%
+\contentsline {subsection}{\numberline {2.25}NGC6717}{29}{}%
+\contentsline {subsection}{\numberline {2.26}NGC6723}{30}{}%
+\contentsline {subsection}{\numberline {2.27}NGC6752}{31}{}%
+\contentsline {subsection}{\numberline {2.28}NGC6838}{32}{}%
+\contentsline {subsection}{\numberline {2.29}NGC7078}{33}{}%
+\contentsline {subsection}{\numberline {2.30}NGC7089}{34}{}%

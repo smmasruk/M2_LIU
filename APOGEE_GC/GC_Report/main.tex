@@ -1,0 +1,909 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{geometry}
+\usepackage{subfig}
+\usepackage{float} 
+\usepackage{graphicx} % Include this in the preamble for \resizebox
+\geometry{margin=1in}
+
+\title{GC Report}
+\author{Masruk}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% \begin{abstract}
+% This is the abstract of the GC Report.
+% \end{abstract}
+
+\tableofcontents
+
+
+
+\section{Cluster Data}
+
+Following table shows comparative information on Metallicity $[\text{Fe/H}]$ and Alpha Abundance $[\alpha/\text{Fe}]$ of the globular cluster observed by APOGEE.
+
+\begin{small}   
+\begin{center}
+    \begin{longtable}{|p{2cm}|p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{2cm}|}
+        \hline
+        Cluster Name & N\textsubscript{P>90\%} & Mean [Fe/H] & Median [Fe/H] & Std [Fe/H] & Mean [$\alpha$/Fe] & Median [$\alpha$/Fe] & Std [$\alpha$/Fe] & N\textsubscript{total} \\
+      \hline
+      Djorg\_2 & 4 & -1.06 & -1.07 & 0.03 & 0.27 & 0.27 & 0.02 &10\\
+      FSR1758 & 14 & -1.44 & -1.41 & 0.09 & 0.27 & 0.27 & 0.05 &15\\
+      HP1 & 14 & -1.22 & -1.22 & 0.17 & 0.20 & 0.20 & 0.05 &17\\
+      Liller1 & 3 & -0.15 & -0.08 & 0.33 & 0.04 & 0.02 & 0.02 &30\\
+      NGC0104 & 292 & -0.75 & -0.75 & 0.06 & 0.28 & 0.28 & 0.02 &302\\
+      NGC0288 & 43 & -1.29 & -1.27 & 0.07 & 0.28 & 0.29 & 0.03 &43\\
+      NGC0362 & 68 & -1.12 & -1.11 & 0.06 & 0.13 & 0.13 & 0.04 &70\\
+      NGC1851 & 67 & -1.15 & -1.12 & 0.18 & 0.20 & 0.17 & 0.13 &71\\
+      NGC1904 & 39 & -1.52 & -1.52 & 0.13 & 0.13 & 0.13 & 0.07 &40\\
+      NGC2298 & 12 & -1.85 & -1.83 & 0.08 & 0.19 & 0.24 & 0.12 &12\\
+      NGC2808 & 129 & -1.08 & -1.09 & 0.08 & 0.13 & 0.16 & 0.08 &132\\
+      NGC3201 & 209 & -1.39 & -1.36 & 0.13 & 0.19 & 0.20 & 0.11 &217\\
+      NGC4147 & 3 & -1.63 & -1.66 & 0.06 & 0.23 & 0.24 & 0.04 &3\\
+      NGC4590 & 38 & -2.22 & -2.23 & 0.09 & 0.24 & 0.25 & 0.10 &41\\
+      NGC5024 & 39 & -1.90 & -1.90 & 0.09 & 0.25 & 0.24 & 0.09 &41\\
+      NGC5053 & 17 & -2.21 & -2.22 & 0.11 & 0.24 & 0.25 & 0.10 &17\\
+      NGC5139 & 1844 & -1.61 & -1.67 & 0.25 & 0.24 & 0.26 & 0.12 &1864\\
+      NGC5272 & 295 & -1.43 & -1.41 & 0.10 & 0.18 & 0.19 & 0.08 &299\\
+      NGC5466 & 17 & -1.81 & -1.80 & 0.09 & 0.16 & 0.16 & 0.11 &17\\
+      NGC5634 & 2 & -1.72 & -1.72 & 0.06 & 0.20 & 0.20 & 0.06 &2\\
+      NGC5904 & 258 & -1.20 & -1.20 & 0.10 & 0.19 & 0.20 & 0.06 &259\\
+      NGC6093 & 3 & -1.61 & -1.61 & 0.00 & 0.25 & 0.25 & 0.00 &3\\
+      NGC6121 & 218 & -1.08 & -1.05 & 0.10 & 0.33 & 0.33 & 0.04 &224\\
+      NGC6144 & 1 & -1.82 & -1.82 & 0.00 & 0.47 & 0.47 & 0.00 &1\\
+      NGC6171 & 60 & -1.02 & -0.99 & 0.11 & 0.32 & 0.32 & 0.04 &65\\
+      NGC6205 & 144 & -1.48 & -1.48 & 0.09 & 0.15 & 0.16 & 0.09 &152\\
+      NGC6218 & 105 & -1.28 & -1.27 & 0.06 & 0.28 & 0.29 & 0.04 &107\\
+      NGC6229 & 8 & -1.24 & -1.26 & 0.07 & 0.18 & 0.20 & 0.08 &11\\
+      NGC6254 & 86 & -1.51 & -1.51 & 0.07 & 0.21 & 0.25 & 0.09 &87\\
+      NGC6273 & 78 & -1.71 & -1.72 & 0.14 & 0.16 & 0.17 & 0.09 &81\\
+      NGC6293 & 20 & -2.09 & -2.07 & 0.08 & 0.14 & 0.13 & 0.12 &20\\
+      NGC6304 & 24 & -0.48 & -0.48 & 0.05 & 0.24 & 0.25 & 0.04 &34\\
+      NGC6316 & 13 & -0.76 & -0.76 & 0.03 & 0.25 & 0.25 & 0.03 &24\\
+      NGC6341 & 72 & -2.24 & -2.23 & 0.08 & 0.18 & 0.17 & 0.15 &80\\
+      NGC6380 & 18 & -0.79 & -0.78 & 0.08 & 0.27 & 0.27 & 0.03 &28\\
+      NGC6388 & 63 & -0.50 & -0.49 & 0.13 & 0.06 & 0.06 & 0.04 &75\\
+      NGC6397 & 182 & -2.03 & -2.02 & 0.06 & 0.19 & 0.17 & 0.10 &187\\
+      NGC6401 & 2 & -0.90 & -0.90 & 0.42 & 0.39 & 0.39 & 0.00 &7\\
+      NGC6441 & 8 & -0.52 & -0.51 & 0.04 & 0.19 & 0.19 & 0.07 &25\\
+      NGC6517 & 1 & -1.58 & -1.58 & 0.00 & 0.25 & 0.25 & 0.00 &1\\
+      NGC6522 & 6 & -1.17 & -1.19 & 0.08 & 0.20 & 0.19 & 0.03 &15\\
+      NGC6540 & 3 & -1.05 & -1.05 & 0.01 & 0.23 & 0.23 & 0.07 &6\\
+      NGC6544 & 26 & -1.52 & -1.49 & 0.09 & 0.22 & 0.21 & 0.05 &27\\
+      NGC6553 & 8 & -0.20 & -0.20 & 0.02 & 0.16 & 0.15 & 0.02 &17\\
+      NGC6558 & 5 & -1.00 & -1.05 & 0.23 & 0.24 & 0.22 & 0.03 &6\\
+      NGC6569 & 10 & -0.96 & -0.99 & 0.07 & 0.26 & 0.27 & 0.06 &14\\
+      NGC6642 & 7 & -0.91 & -1.10 & 0.50 & 0.24 & 0.27 & 0.10 &12\\
+      NGC6656 & 390 & -1.71 & -1.70 & 0.10 & 0.22 & 0.21 & 0.10 &412\\
+      NGC6715 & 90 & -0.97 & -1.21 & 0.55 & 0.06 & 0.07 & 0.11 &1809\\
+      NGC6717 & 3 & -1.16 & -1.13 & 0.04 & 0.28 & 0.28 & 0.01 &5\\
+      NGC6723 & 9 & -1.04 & -1.03 & 0.05 & 0.25 & 0.25 & 0.03 &9\\
+      NGC6752 & 149 & -1.49 & -1.47 & 0.09 & 0.20 & 0.21 & 0.08 &152\\
+      NGC6760 & 9 & -0.75 & -0.74 & 0.04 & 0.26 & 0.27 & 0.02 &11\\
+      NGC6809 & 97 & -1.77 & -1.76 & 0.08 & 0.21 & 0.20 & 0.08 &98\\
+      NGC6838 & 120 & -0.75 & -0.75 & 0.05 & 0.28 & 0.29 & 0.03 &129\\
+      NGC7078 & 151 & -2.29 & -2.30 & 0.10 & 0.19 & 0.20 & 0.16 &155\\
+      NGC7089 & 33 & -1.47 & -1.48 & 0.06 & 0.17 & 0.16 & 0.06 &36\\
+      Pal1 & 2 & -0.45 & -0.45 & 0.00 & 0.10 & 0.10 & 0.02 &3\\
+      Pal5 & 4 & -1.24 & -1.23 & 0.06 & 0.17 & 0.18 & 0.02 &12\\
+      Pal6 & 6 & -0.93 & -0.94 & 0.08 & 0.28 & 0.28 & 0.02 &6\\
+      Rup106 & 2 & -1.31 & -1.31 & 0.03 & -0.05 & -0.05 & 0.01 &2\\
+      Ter10 & 1 & -1.62 & -1.62 & 0.00 & 0.17 & 0.17 & 0.00 &2\\
+      Ter12 & 1 & -0.56 & -0.56 & 0.00 & 0.29 & 0.29 & 0.00 &6\\
+      Ter2 & 3 & -0.86 & -0.89 & 0.05 & 0.28 & 0.28 & 0.01 &5\\
+      Ter4 & 2 & -1.37 & -1.37 & 0.08 & 0.17 & 0.17 & 0.10 &3\\
+      Ter5 & 4 & -0.81 & -0.67 & 0.29 & 0.17 & 0.21 & 0.12 &24\\
+      Ter9 & 10 & -1.38 & -1.41 & 0.06 & 0.15 & 0.13 & 0.07 &23\\
+      Ton2 & 7 & -0.80 & -0.63 & 0.34 & 0.22 & 0.25 & 0.08 &11\\
+      
+\hline
+    \caption{Cluster Data: Metallicity, Alpha Abundance, and Number of Stars with $N_{MP} \geq$ 90\%}
+    \label{tab:cluster_data}
+\end{longtable}
+\end{center}
+\end{small}
+
+\newpage
+
+
+Among these clusters, Some of them have HST photometry data. I have separated them by looking into  Schiavon catalogue (table1)\cite{10.1093/mnras/stad3020} and the clusters are:
+ \begin{table}[h!]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+    Cluster Name & $N_{\text{VB\_PROB} \geq 90\%}$ & $\langle \text{[Fe/H]} \rangle$ & $\tilde{\text{[Fe/H]}}$ & $\sigma_{\text{[Fe/H]}}$ & $\langle [\alpha/\text{Fe}] \rangle$ & $\tilde{[\alpha/\text{Fe}]}$ & $\sigma_{[\alpha/\text{Fe}]}$ & $N_{total}$ \\
+    \hline
+    NGC0104 & 292 & -0.75 & -0.75 & 0.06 & 0.28 & 0.28 & 0.02 &302\\
+    NGC0288 & 43 & -1.29 & -1.27 & 0.07 & 0.28 & 0.29 & 0.03 &43\\
+    NGC0362 & 68 & -1.12 & -1.11 & 0.06 & 0.13 & 0.13 & 0.04 &70\\
+    NGC1851 & 67 & -1.15 & -1.12 & 0.18 & 0.20 & 0.17 & 0.13 &71\\
+    NGC2298 & 12 & -1.85 & -1.83 & 0.08 & 0.19 & 0.24 & 0.12 &12\\
+    NGC2808 & 129 & -1.08 & -1.09 & 0.08 & 0.13 & 0.16 & 0.08 &132\\
+    NGC3201 & 209 & -1.39 & -1.36 & 0.13 & 0.19 & 0.20 & 0.11 &217\\
+    NGC4590 & 38 & -2.22 & -2.23 & 0.09 & 0.24 & 0.25 & 0.10 &41\\
+    NGC5024 & 39 & -1.90 & -1.90 & 0.09 & 0.25 & 0.24 & 0.09 &41\\
+    NGC5053 & 17 & -2.21 & -2.22 & 0.11 & 0.24 & 0.25 & 0.10 &17\\
+    NGC5272 & 295 & -1.43 & -1.41 & 0.10 & 0.18 & 0.19 & 0.08 &299\\
+    NGC5466 & 17 & -1.81 & -1.80 & 0.09 & 0.16 & 0.16 & 0.11 &17\\
+    NGC5904 & 258 & -1.20 & -1.20 & 0.10 & 0.19 & 0.20 & 0.06 &259\\
+    NGC6093 & 3 & -1.61 & -1.61 & 0.00 & 0.25 & 0.25 & 0.00 &3\\
+    NGC6121 & 218 & -1.08 & -1.05 & 0.10 & 0.33 & 0.33 & 0.04 &224\\
+    NGC6144 & 1 & -1.82 & -1.82 & 0.00 & 0.47 & 0.47 & 0.00 &1\\
+    NGC6171 & 60 & -1.02 & -0.99 & 0.11 & 0.32 & 0.32 & 0.04 &65\\
+    NGC6205 & 144 & -1.48 & -1.48 & 0.09 & 0.15 & 0.16 & 0.09 &152\\
+    NGC6218 & 105 & -1.28 & -1.27 & 0.06 & 0.28 & 0.29 & 0.04 &107\\
+    NGC6254 & 86 & -1.51 & -1.51 & 0.07 & 0.21 & 0.25 & 0.09 &87\\
+    NGC6304 & 24 & -0.48 & -0.48 & 0.05 & 0.24 & 0.25 & 0.04 &34\\
+    NGC6341 & 72 & -2.24 & -2.23 & 0.08 & 0.18 & 0.17 & 0.15 &80\\
+    NGC6388 & 63 & -0.50 & -0.49 & 0.13 & 0.06 & 0.06 & 0.04 &75\\
+    NGC6715 & 90 & -0.97 & -1.21 & 0.55 & 0.06 & 0.07 & 0.11 &1809\\
+    NGC6717 & 3 & -1.16 & -1.13 & 0.04 & 0.28 & 0.28 & 0.01 &5\\
+    NGC6723 & 9 & -1.04 & -1.03 & 0.05 & 0.25 & 0.25 & 0.03 &9\\
+    NGC6752 & 149 & -1.49 & -1.47 & 0.09 & 0.20 & 0.21 & 0.08 &152\\
+    NGC6838 & 120 & -0.75 & -0.75 & 0.05 & 0.28 & 0.29 & 0.03 &129\\
+    NGC7078 & 151 & -2.29 & -2.30 & 0.10 & 0.19 & 0.20 & 0.16 &155\\
+    NGC7089 & 33 & -1.47 & -1.48 & 0.06 & 0.17 & 0.16 & 0.06 &36\\
+    
+    \hline
+    \end{tabular}%
+    }
+    \caption{Cluster Data: Metallicity, Alpha Abundance, and $N_{MP}$ 90\%}
+    \label{tab:cluster_data_new}
+    \end{table}
+    
+\section{Individual Cluster  and analysis}
+
+
+
+
+\subsection{NGC0104}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC0104_metalicity.png}
+        \caption{Metallicity for NGC0104}
+        \label{fig:NGC0104_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC0104_alpha.png}
+        \caption{Alpha abundance distribution for NGC0104}
+        \label{fig:NGC0104_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC0104}
+    \label{fig:NGC0104_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC0288}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC0288_metalicity.png}
+        \caption{Metallicity for NGC0288}
+        \label{fig:NGC0288_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC0288_alpha.png}
+        \caption{Alpha abundance distribution for NGC0288}
+        \label{fig:NGC0288_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC0288}
+    \label{fig:NGC0288_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC0362}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC0362_metalicity.png}
+        \caption{Metallicity for NGC0362}
+        \label{fig:NGC0362_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC0362_alpha.png}
+        \caption{Alpha abundance distribution for NGC0362}
+        \label{fig:NGC0362_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC0362}
+    \label{fig:NGC0362_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC1851}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC1851_metalicity.png}
+        \caption{Metallicity for NGC1851}
+        \label{fig:NGC1851_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC1851_alpha.png}
+        \caption{Alpha abundance distribution for NGC1851}
+        \label{fig:NGC1851_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC1851}
+    \label{fig:NGC1851_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC2298}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC2298_metalicity.png}
+        \caption{Metallicity for NGC2298}
+        \label{fig:NGC2298_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC2298_alpha.png}
+        \caption{Alpha abundance distribution for NGC2298}
+        \label{fig:NGC2298_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC2298}
+    \label{fig:NGC2298_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC2808}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC2808_metalicity.png}
+        \caption{Metallicity for NGC2808}
+        \label{fig:NGC2808_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC2808_alpha.png}
+        \caption{Alpha abundance distribution for NGC2808}
+        \label{fig:NGC2808_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC2808}
+    \label{fig:NGC2808_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC3201}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC3201_metalicity.png}
+        \caption{Metallicity for NGC3201}
+        \label{fig:NGC3201_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC3201_alpha.png}
+        \caption{Alpha abundance distribution for NGC3201}
+        \label{fig:NGC3201_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC3201}
+    \label{fig:NGC3201_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC4590}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC4590_metalicity.png}
+        \caption{Metallicity for NGC4590}
+        \label{fig:NGC4590_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC4590_alpha.png}
+        \caption{Alpha abundance distribution for NGC4590}
+        \label{fig:NGC4590_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC4590}
+    \label{fig:NGC4590_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC5024}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5024_metalicity.png}
+        \caption{Metallicity for NGC5024}
+        \label{fig:NGC5024_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5024_alpha.png}
+        \caption{Alpha abundance distribution for NGC5024}
+        \label{fig:NGC5024_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC5024}
+    \label{fig:NGC5024_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC5053}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5053_metalicity.png}
+        \caption{Metallicity for NGC5053}
+        \label{fig:NGC5053_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5053_alpha.png}
+        \caption{Alpha abundance distribution for NGC5053}
+        \label{fig:NGC5053_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC5053}
+    \label{fig:NGC5053_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC5272}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5272_metalicity.png}
+        \caption{Metallicity for NGC5272}
+        \label{fig:NGC5272_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5272_alpha.png}
+        \caption{Alpha abundance distribution for NGC5272}
+        \label{fig:NGC5272_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC5272}
+    \label{fig:NGC5272_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC5466}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5466_metalicity.png}
+        \caption{Metallicity for NGC5466}
+        \label{fig:NGC5466_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5466_alpha.png}
+        \caption{Alpha abundance distribution for NGC5466}
+        \label{fig:NGC5466_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC5466}
+    \label{fig:NGC5466_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC5904}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5904_metalicity.png}
+        \caption{Metallicity for NGC5904}
+        \label{fig:NGC5904_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC5904_alpha.png}
+        \caption{Alpha abundance distribution for NGC5904}
+        \label{fig:NGC5904_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC5904}
+    \label{fig:NGC5904_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6093}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6093_metalicity.png}
+        \caption{Metallicity for NGC6093}
+        \label{fig:NGC6093_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6093_alpha.png}
+        \caption{Alpha abundance distribution for NGC6093}
+        \label{fig:NGC6093_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6093}
+    \label{fig:NGC6093_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6121}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6121_metalicity.png}
+        \caption{Metallicity for NGC6121}
+        \label{fig:NGC6121_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6121_alpha.png}
+        \caption{Alpha abundance distribution for NGC6121}
+        \label{fig:NGC6121_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6121}
+    \label{fig:NGC6121_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6144}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6144_metalicity.png}
+        \caption{Metallicity for NGC6144}
+        \label{fig:NGC6144_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6144_alpha.png}
+        \caption{Alpha abundance distribution for NGC6144}
+        \label{fig:NGC6144_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6144}
+    \label{fig:NGC6144_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6171}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6171_metalicity.png}
+        \caption{Metallicity for NGC6171}
+        \label{fig:NGC6171_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6171_alpha.png}
+        \caption{Alpha abundance distribution for NGC6171}
+        \label{fig:NGC6171_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6171}
+    \label{fig:NGC6171_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6205}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6205_metalicity.png}
+        \caption{Metallicity for NGC6205}
+        \label{fig:NGC6205_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6205_alpha.png}
+        \caption{Alpha abundance distribution for NGC6205}
+        \label{fig:NGC6205_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6205}
+    \label{fig:NGC6205_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6218}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6218_metalicity.png}
+        \caption{Metallicity for NGC6218}
+        \label{fig:NGC6218_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6218_alpha.png}
+        \caption{Alpha abundance distribution for NGC6218}
+        \label{fig:NGC6218_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6218}
+    \label{fig:NGC6218_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6254}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6254_metalicity.png}
+        \caption{Metallicity for NGC6254}
+        \label{fig:NGC6254_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6254_alpha.png}
+        \caption{Alpha abundance distribution for NGC6254}
+        \label{fig:NGC6254_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6254}
+    \label{fig:NGC6254_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6304}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6304_metalicity.png}
+        \caption{Metallicity for NGC6304}
+        \label{fig:NGC6304_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6304_alpha.png}
+        \caption{Alpha abundance distribution for NGC6304}
+        \label{fig:NGC6304_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6304}
+    \label{fig:NGC6304_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6341}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6341_metalicity.png}
+        \caption{Metallicity for NGC6341}
+        \label{fig:NGC6341_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6341_alpha.png}
+        \caption{Alpha abundance distribution for NGC6341}
+        \label{fig:NGC6341_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6341}
+    \label{fig:NGC6341_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6388}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6388_metalicity.png}
+        \caption{Metallicity for NGC6388}
+        \label{fig:NGC6388_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6388_alpha.png}
+        \caption{Alpha abundance distribution for NGC6388}
+        \label{fig:NGC6388_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6388}
+    \label{fig:NGC6388_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6715}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6715_metalicity.png}
+        \caption{Metallicity for NGC6715}
+        \label{fig:NGC6715_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6715_alpha.png}
+        \caption{Alpha abundance distribution for NGC6715}
+        \label{fig:NGC6715_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6715}
+    \label{fig:NGC6715_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6717}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6717_metalicity.png}
+        \caption{Metallicity for NGC6717}
+        \label{fig:NGC6717_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6717_alpha.png}
+        \caption{Alpha abundance distribution for NGC6717}
+        \label{fig:NGC6717_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6717}
+    \label{fig:NGC6717_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6723}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6723_metalicity.png}
+        \caption{Metallicity for NGC6723}
+        \label{fig:NGC6723_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6723_alpha.png}
+        \caption{Alpha abundance distribution for NGC6723}
+        \label{fig:NGC6723_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6723}
+    \label{fig:NGC6723_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC6752}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6752_metalicity.png}
+        \caption{Metallicity for NGC6752}
+        \label{fig:NGC6752_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6752_alpha.png}
+        \caption{Alpha abundance distribution for NGC6752}
+        \label{fig:NGC6752_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6752}
+    \label{fig:NGC6752_combined}
+\end{figure}
+\clearpage
+
+
+
+
+\subsection{NGC6838}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6838_metalicity.png}
+        \caption{Metallicity for NGC6838}
+        \label{fig:NGC6838_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC6838_alpha.png}
+        \caption{Alpha abundance distribution for NGC6838}
+        \label{fig:NGC6838_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC6838}
+    \label{fig:NGC6838_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC7078}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC7078_metalicity.png}
+        \caption{Metallicity for NGC7078}
+        \label{fig:NGC7078_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC7078_alpha.png}
+        \caption{Alpha abundance distribution for NGC7078}
+        \label{fig:NGC7078_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC7078}
+    \label{fig:NGC7078_combined}
+\end{figure}
+\clearpage
+
+
+\subsection{NGC7089}
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC7089_metalicity.png}
+        \caption{Metallicity for NGC7089}
+        \label{fig:NGC7089_metalicity}
+    \end{minipage}
+    \hfill
+    % Second subfigure
+    \begin{minipage}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{NGC7089_alpha.png}
+        \caption{Alpha abundance distribution for NGC7089}
+        \label{fig:NGC7089_alpha}
+    \end{minipage}
+    \caption{Metallicity and Alpha abundance distribution for NGC7089}
+    \label{fig:NGC7089_combined}
+\end{figure}
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{report}
+
+
+
+
+\end{document}
+
